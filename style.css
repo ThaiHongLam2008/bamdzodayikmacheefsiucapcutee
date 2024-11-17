@@ -192,7 +192,7 @@ img {
     transform: translate(-50%, -50%) scale(1);
 }
 .popup img {
-    width: 100%;
+    width: 50%;
     margin: 5px auto;
     border-radius: 30px;
 }
@@ -213,4 +213,9 @@ img {
 .popup p span {
     color: yellow;
     font-weight: bold;
+}
+@media (max-width: 768px) { /* Dành cho màn hình nhỏ hơn 768px */
+    .popup img {
+        width: 70%; /* Tăng kích thước ảnh trên mobile */
+    }
 }
